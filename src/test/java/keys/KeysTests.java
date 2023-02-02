@@ -13,4 +13,10 @@ public class KeysTests extends BaseTest {
         keyPage.enterText("A" + Keys.BACK_SPACE);
         assertEquals(keyPage.getResult(), "You entered: BACK_SPACE");
     }
+
+    @Test
+    public void testPi(){
+        var keyPage = homePage.clickKeyPresses();
+        keyPage.enterPi();
+    }
 }

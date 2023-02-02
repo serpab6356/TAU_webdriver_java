@@ -29,7 +29,7 @@ public class HomePage {
 
     public KeyPressesPage clickKeyPresses(){
         clicLink("Key Presses");
-        return new KeyPressesPage(drive);
+        return new KeyPressesPage(driver);
     }
 
     public void clicLink(String linkText){
