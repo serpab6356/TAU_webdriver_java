@@ -32,6 +32,24 @@ public class HomePage {
         return new KeyPressesPage(driver);
     }
 
+    public AlertsPage clickJavaScriptAlerts(){
+        clicLink("JavaScript Alerts");
+        return new AlertsPage(driver);
+    }
+
+    public FileUploadPage clicFileUpload(){
+        clicLink("File Upload");
+        return new FileUploadPage(driver);
+    }
+
+    public WysiwygEditorPage clicWysinwygEditor(){
+        clicLink("WYSIWYG Editor");
+        return new WysiwygEditorPage(driver);
+    }
+
+
+
+
     public void clicLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
