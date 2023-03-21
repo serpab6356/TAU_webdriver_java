@@ -17,7 +17,7 @@ public class HomePage {
         return new LoginPage(driver);
     }
 
-    public DropdownPage clicDropDown(){
+    public DropdownPage clickDropDown(){
         clicLink("Dropdown");
         return new DropdownPage(driver);
     }
@@ -37,17 +37,40 @@ public class HomePage {
         return new AlertsPage(driver);
     }
 
-    public FileUploadPage clicFileUpload(){
+    public FileUploadPage clickFileUpload(){
         clicLink("File Upload");
         return new FileUploadPage(driver);
     }
 
-    public WysiwygEditorPage clicWysinwygEditor(){
+    public WysiwygEditorPage clickWysinwygEditor(){
         clicLink("WYSIWYG Editor");
         return new WysiwygEditorPage(driver);
     }
 
+    public LargeAndDeepDomPage clickLargeAndDeepDom(){
+        clicLink("Large & Deep DOM");
+        return new LargeAndDeepDomPage(driver);
+    }
 
+    public InfiniteScrollPage clickInfiniteScroll(){
+        clicLink("Ininite Scroll");
+        return new InfiniteScrollPage(driver);
+    }
+
+    public DynamicLoadingPage clickDynamicLoading(){
+        clicLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
+    }
+
+    public DynamicLoadingExample1Page clickDynamicLoadingEx1(){
+        clicLink("Dynamic Loading");
+        return new DynamicLoadingExample1Page(driver);
+    }
+
+    public MultipleWindowsPage clickMultipleWindows(){
+        clicLink("Multiple Windows");
+        return new MultipleWindowsPage(driver);
+    }
 
 
     public void clicLink(String linkText){
