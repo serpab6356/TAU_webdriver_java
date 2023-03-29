@@ -18,62 +18,62 @@ public class HomePage {
     }
 
     public DropdownPage clickDropDown(){
-        clicLink("Dropdown");
+        clickLink("Dropdown");
         return new DropdownPage(driver);
     }
 
     public HoversPage clickHovers(){
-        clicLink("Hovers");
+        clickLink("Hovers");
         return new HoversPage(driver);
     }
 
     public KeyPressesPage clickKeyPresses(){
-        clicLink("Key Presses");
+        clickLink("Key Presses");
         return new KeyPressesPage(driver);
     }
 
     public AlertsPage clickJavaScriptAlerts(){
-        clicLink("JavaScript Alerts");
+        clickLink("JavaScript Alerts");
         return new AlertsPage(driver);
     }
 
     public FileUploadPage clickFileUpload(){
-        clicLink("File Upload");
+        clickLink("File Upload");
         return new FileUploadPage(driver);
     }
 
     public WysiwygEditorPage clickWysinwygEditor(){
-        clicLink("WYSIWYG Editor");
+        clickLink("WYSIWYG Editor");
         return new WysiwygEditorPage(driver);
     }
 
     public LargeAndDeepDomPage clickLargeAndDeepDom(){
-        clicLink("Large & Deep DOM");
+        clickLink("Large & Deep DOM");
         return new LargeAndDeepDomPage(driver);
     }
 
     public InfiniteScrollPage clickInfiniteScroll(){
-        clicLink("Ininite Scroll");
+        clickLink("Ininite Scroll");
         return new InfiniteScrollPage(driver);
     }
 
     public DynamicLoadingPage clickDynamicLoading(){
-        clicLink("Dynamic Loading");
+        clickLink("Dynamic Loading");
         return new DynamicLoadingPage(driver);
     }
 
     public DynamicLoadingExample1Page clickDynamicLoadingEx1(){
-        clicLink("Dynamic Loading");
+        clickLink("Dynamic Loading");
         return new DynamicLoadingExample1Page(driver);
     }
 
     public MultipleWindowsPage clickMultipleWindows(){
-        clicLink("Multiple Windows");
+        clickLink("Multiple Windows");
         return new MultipleWindowsPage(driver);
     }
 
 
-    public void clicLink(String linkText){
+    public void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
 
